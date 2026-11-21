@@ -1,0 +1,17 @@
+[project]
+name = "ops-agents"
+version = "0.1.0"
+description = "Multi-agent operations assistant with an MCP connection layer"
+readme = "README.md"
+authors = [
+    { name = "Cynthea Rose Antony", email = "264896255+cynthea-rose@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+ops-agents = "ops_agents:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
