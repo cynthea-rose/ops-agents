@@ -42,7 +42,7 @@ Agents return types, validated results rather than prose. The coordinator combin
 SQLite needs no server and keeps everything in a single file, while still being real SQL. The database is generated from a seed script rather than committed, so anyone can rebuild it from scratch.
 
 **A reproducible environment.**
-Dependencies and the Python version are pinned with [uv](https://docs.astral.sh/uv/) and a committed lockfile ('uv.lovk'). The code uses a 'src/' layout, so tests and the demo run the installed package, not whatever happens to be in the working directory.
+Dependencies and the Python version are pinned with [uv](https://docs.astral.sh/uv/) and a committed lockfile ('uv.lock'). The code uses a 'src/' layout, so tests and the demo run the installed package, not whatever happens to be in the working directory.
 
 **Secrets stay out of the repo**
 The API key is read from a local '.env' file, which is git-ignored, '.env.example' documents which vasriables are needed.
